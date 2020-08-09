@@ -9,4 +9,8 @@ I load the data from the package Coronavirus from RamiKrispin ([link](https://gi
 
 ![img](img/Coronavirus_2020_06_06.jpeg)
 
+Removed Brazil because it had so many cases that the other countries were not clearly separable.
+
+![](img/Coronavirus_08082020.png)
+
 ![img2](img/cases_daily.png)
