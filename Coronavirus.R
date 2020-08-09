@@ -28,3 +28,16 @@ compare_first_days %>%
   scale_color_manual(values=c("red","green","blue","orange","brown","black"))
   #scale_y_log10()
   #scale_size_manual(values=c(rep(0.5,2),2))
+
+
+
+
+#New cases daily
+
+coronavirus %>% 
+  filter(country%in%c("Germany","Chile"),
+         type%in%c("confirmed","death")) %>% 
+  ggplot(aes(x=date,y=cases))+
+  geom_segment(aes(xend=date,yend=0))+
+  geom_hline(yintercept=1000,col="red")+
+  facet_grid(type~country,scales="free")
