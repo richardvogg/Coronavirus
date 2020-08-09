@@ -1,6 +1,6 @@
 # Coronavirus
 
-A short code to review current Coronavirus cases in selecte countries of interest.
+A short code to review current Coronavirus cases in selected countries of interest.
 
 In specific I am interested in how the countries with most cases are developing, and compare this to Chile where I currently live.
 Secondly, it is also interesting to compare Chile to the rest of Latin America.
