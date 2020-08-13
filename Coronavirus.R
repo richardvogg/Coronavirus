@@ -22,7 +22,8 @@ compare_first_days <- coronavirus %>%
 
 compare_first_days %>%
   #filter(country%in%c('Chile','Brazil','Peru','Ecuador','Argentina','Colombia')) %>%
-  filter(country%in%c('Chile','Germany','Spain','Italy','Brazil','Iran')) %>%
+  filter(country%in%c('Chile','Germany','Spain','Italy','Iran')) %>%
+  #filter(date<='2020-06-01') %>% 
   ggplot(aes(x=days_since_start,y=total_cases,col=country))+
   geom_line(size=0.8)+
   scale_color_manual(values=c("red","green","blue","orange","brown","black"))
