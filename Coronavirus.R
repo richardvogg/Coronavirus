@@ -36,7 +36,7 @@ compare_first_days %>%
 #New cases daily
 
 coronavirus %>% 
-  filter(country%in%c("Germany","Chile"),
+  filter(country%in%c("Germany","Chile","Italy"),
          type%in%c("confirmed","death")) %>% 
   ggplot(aes(x=date,y=cases))+
   geom_segment(aes(xend=date,yend=0))+
